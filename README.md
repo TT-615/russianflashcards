@@ -1,1 +1,1 @@
-This is a Russian FlashCard for Lessons.
+This is a FlashCard game prototype for my Russian Lessons to help me learn the language.
