@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"
+    <link rel= "shortcut icon" href="images/rusbear.png">
+    <link rel="stylesheet" href="style.css">
     <title>Russian Flashcards</title>
 </head>
 <body>
@@ -12,15 +13,29 @@
     <header>
         <div class="container">
             <div class="nav">
-                <h1>Карточки с русским алфавитом</h1>
+                <h1 style="font-family:fantasy">РУССКИЙ ~ АЛФАВИТ</h1>
         </div>
         <div>
-            <button>New Card</button>
-            <button>Delete Cards</button>
+            <button onclick="showCreateCardBox()">New Card</button>
+            <button onclick="delFlashcards()">Delete Cards</button>
         </div>
 
     </header>
+    <div class="container">
+        <div class="create-box">
+            <h2 style="text-align: center;color: black;">Create Flashcard</h2>
+            <label for="question">Question</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+        <div>
+        <button onclick="addFlashcard()">Save</button>
+        <button onclick="hidCreateBox()">Close</button>
+    </div>
+</div>
+<div class="flashcards"></div>
+</div>
     <script src="script.js"></script>
-    
 </body>
 </html>
